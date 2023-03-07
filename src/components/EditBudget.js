@@ -14,12 +14,13 @@ const EditBudget = (props) => {
 				type='number'
 				class='form-control mr-3'
 				id='name'
-				min= '1'
+				// min= '1'
 				max= '20000'
 				maxLength={5}
 				value={value}
 				onChange={(event) => {setValue(event.target.value)}}
 				onInput={maxLengthCheck}
+				step={10}
 			/>
 			<button
 				type='button'

@@ -1,13 +1,12 @@
-import React from 'react';
-import ExpenseTotal from './ExpenseTotal';
-import CurrencyChange from './CurrencyChange';
+import React, { useContext } from 'react';
+import { AppContext } from '../context/AppContext';
 
 const ViewBudget = (props) => {
-	let getcurrency = document.getElementById("currency");
-	console.log("==>",getcurrency);
+	const { Location } = useContext(AppContext);
+	
 	return (
 		<>
-			<span>Budget: £{props.budget}</span>
+			<span>Budget: { Location }{props.budget}</span>
 			<button type='button' class='btn btn-primary' onClick={props.handleEditClick}>
 				Edit
 			</button>
