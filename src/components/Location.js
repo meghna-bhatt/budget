@@ -15,10 +15,10 @@ const Location = () => {
   return (
         <div className='alert'>  {
       <select name="Location" id="Location" onChange={event=>changeLocation(event.target.value)} class="alert alert-success">
-        <option value="£">Pound(£)</option>
-        <option value="₹">India(₹)</option>
-        <option value="€">Europe(€)</option>
-        <option value="CAD">Canada(CAD)</option>
+        <option value="$">$ Dollar</option>
+        <option value="£">£ Pound</option>
+        <option value="€">€ Euro</option>
+        <option value="₹">₹ Ruppee</option>
       </select>	
       }	
     </div>
